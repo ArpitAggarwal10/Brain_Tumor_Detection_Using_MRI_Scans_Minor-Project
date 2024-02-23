@@ -10,6 +10,7 @@ from keras.models import Sequential
 from keras.layers import Conv2D, MaxPooling2D
 from keras.layers import Activation, Dropout, Flatten, Dense
 from keras.utils import to_categorical
+import matplotlib.pyplot as plt
 
 image_directory = 'datasets/'
 
@@ -95,3 +96,29 @@ validation_data = (x_test, y_test),
 shuffle = False)
 
 model.save('BrainTumor10EpochsCategorical.h5')
+
+# Model Training
+history = model.fit(x_train, y_train, 
+                    batch_size = 16, 
+                    verbose = 1, 
+                    epochs = 10, 
+                    validation_data = (x_test, y_test),
+                    shuffle = False)
+
+# Plot training and validation accuracy values
+plt.plot(history.history['accuracy'])
+plt.plot(history.history['val_accuracy'])
+plt.title('Model Accuracy')
+plt.xlabel('Epoch')
+plt.ylabel('Accuracy')
+plt.legend(['Train', 'Validation'], loc='upper left')
+plt.show()
+
+# Plot training and validation loss values
+plt.plot(history.history['loss'])
+plt.plot(history.history['val_loss'])
+plt.title('Model Loss')
+plt.xlabel('Epoch')
+plt.ylabel('Loss')
+plt.legend(['Train', 'Validation'], loc='upper left')
+plt.show()
