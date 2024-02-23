@@ -52,29 +52,54 @@ A list of commonly used resources that I find helpful are listed in the acknowle
 
 ## Algorithms Used
 
-> * VGG16 (Transfer Learning in Deep Learning)
+> * Data Loading And Pre-Processing
+> * Train-Test Split
+> * Data Normalization And One-Hot Encoding
+> * Model Architecture
+> * Loss Function And Oprimizer
+> * Model Training
+> * Model Saving
+> * Explanation Of Activation Function
+> * Explanation Of Softmax Activation
 
 ## Directory Structure
 
 ```sh
-├── Brain_Tumour_Detection_using_MRI_scans.ipynb
-├── brain_tumour_detection_using_mri_scans.py
+├── archive
+│   └── Br35H-Mask-RCNN
+│       └── TEST
+│           └── annotations_test
+│           └── y701.jpg - y800.jpg
+│       └── TRAIN
+│           └── annotations_train
+│           └── y0.jpg - y499.jpg
+│       └── VAL
+│           └── annotations_val
+│           └── y500.jpg - y700.jpg
+│       └── annotations_all
+├── datasets
+│   └── no
+│       └── no0.jpg - no1499.jpg
+│   └── yes
+│       └── y0.jpg - y1499.jpg
 ├── images
 │   └── logo.png
+│   └── mini-brain.png
+├── pred
+│   └── pred0.jpg - pred59.jpg
+├── static
+│   └── css
+│   └── js
+├── templates
+│   └── import
+│   └── index
+├── uploads
+├── app.py
+├── BrainTumor10Epochs.h5
+├── BrainTumor10EpochsCategorical.h5
+├── mainTest.py
+├── mainTrain.py
 ├── README.md
-└── Test Dataset
-    ├── Normal
-    │   ├── no1.jpg
-    │   ├── no2.jpg
-    │   ├── no3.jpg
-    │   ├── no4.jpg
-    │   └── no5.jpg
-    └── Tumour
-        ├── y1.jpg
-        ├── y2.jpg
-        ├── y3.jpg
-        ├── y4.jpg
-        └── y5.jpg
 ```
 <!-- GETTING STARTED -->
 ## Getting Started
