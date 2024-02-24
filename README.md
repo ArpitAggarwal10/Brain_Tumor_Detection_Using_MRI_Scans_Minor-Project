@@ -96,6 +96,7 @@ In this project, I designed & built an automatic brain tumor segmentation techni
 │   └── import
 │   └── index
 ├── uploads
+├── .gitignore
 ├── app.py
 ├── BrainTumor10Epochs.h5
 ├── BrainTumor10EpochsCategorical.h5
