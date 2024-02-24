@@ -39,13 +39,14 @@ In this project, I designed & built an automatic brain tumor segmentation techni
 ## Libraries Used 
 
     ```
-    * Keras
-    * TensorFlow
-    * Sklearn 
-    * Open Cv
-    * Pillow 
-    * Numpy
     * Flask
+    * keras
+    * matplotlib
+    * numpy
+    * opencv-python
+    * Pillow
+    * scikit-learn
+    * tensorFlow
     * Werkzeug
     ```
 
