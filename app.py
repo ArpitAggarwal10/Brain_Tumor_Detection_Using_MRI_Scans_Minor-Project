@@ -1,7 +1,7 @@
 import os
 import tensorflow as tf
 import numpy as np
-# from tensorflow.keras.preprocessing import image
+from tensorflow.keras.preprocessing import image
 from PIL import Image
 import cv2
 from keras.models import load_model
